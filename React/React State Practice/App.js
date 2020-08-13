@@ -46,3 +46,30 @@ class App extends React.Component {
 }
 
 export default App
+
+// Once from scratch from memory 
+import React from "react"
+
+class App extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            isLoggedIn: true
+        }
+    }
+    render() {
+        let userStatus
+        if(this.state.isLoggedIn == true) {
+            userStatus = "In"
+        } else {
+            userStatus = "Out"
+        }
+        return (
+            <div>
+                <h2>You are currently logged</h2><h1>{userStatus}</h1>
+            </div>
+        )
+    }
+}
+
+export default App
