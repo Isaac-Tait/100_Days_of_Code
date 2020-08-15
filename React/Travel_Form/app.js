@@ -146,7 +146,7 @@ class App extends Component {
                 <h3>Your dietary restrictions: </h3>
                     <p>Vegan: {this.state.Vegan ? "Yes" : "No"}</p>
                     <p>Gluten Free: {this.state.glutenFree ? "Yes" : "No"}</p>
-                    <p>Low-FODMAP: {this.state.lowFodMap ? "Yes" : "No"}</p>
+                    <p>Low-F.O.D.M.A.P.: {this.state.lowFodMap ? "Yes" : "No"}</p>
                     <p>Kosher: {this.state.Kosher ? "Yes" : "No"}</p>
             </main>
         )
