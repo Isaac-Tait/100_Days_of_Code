@@ -1,16 +1,15 @@
 import React, {Component} from "react"
 
-class MemeGen extends Component {
+class MemeGenerator extends Component {
     constructor() {
         super()
         this.state = {
             topText: "",
             bottomText: "",
-            img: "http://i.imgflip.com/1bij.jpg",
+            randomImg: "http://i.imgflip.com/1bij.jpg",
             allMemeImgs: []
         }
         this.handleChange = this.handleChange.bind(this)
-        this.handleClick = this.handleClick.bind(this)
     }
     
     componentDidMount() {
@@ -21,42 +20,35 @@ class MemeGen extends Component {
                 this.setState({ allMemeImgs: memes })
             })
     }
-
+    
     handleChange(event) {
         const {name, value} = event.target
         this.setState({ [name]: value })
     }
-
-    handleClick(event) {
-        event.preventDefault()
-        const randNum = Math.floor(Math.random() * this.state.allMemeImgs.length)
-        const randMemeImg = this.state.allMemeImgs[randNum].url
-        this.setState({ img: randMemeImg })
-    }
-
+    
     render() {
         return (
             <div>
                 <form className="meme-form">
-                    <input
+                    <input 
                         type="text"
                         name="topText"
                         placeholder="Top Text"
                         value={this.state.topText}
                         onChange={this.handleChange}
-                    />
-                    <input
+                    /> 
+                    <input 
                         type="text"
                         name="bottomText"
                         placeholder="Bottom Text"
                         value={this.state.bottomText}
                         onChange={this.handleChange}
-                    />
-
-                    <button onClick={this.handleClick}>Generate</button>
+                    /> 
+                
+                    <button>Gen</button>
                 </form>
                 <div className="meme">
-                    <img src={this.state.img} alt="memeImage" />
+                    <img src={this.state.randomImg} alt="" />
                     <h2 className="top">{this.state.topText}</h2>
                     <h2 className="bottom">{this.state.bottomText}</h2>
                 </div>
@@ -65,4 +57,4 @@ class MemeGen extends Component {
     }
 }
 
-export default MemeGen
+export default MemeGenerator
