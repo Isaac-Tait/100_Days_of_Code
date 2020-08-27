@@ -59,16 +59,16 @@
       [width,width+1,width+2,width+3]
     ] 
 
-    const theTetrominoes = [lTetromino, zTetromino, tTetromino, oTetromino, iTetromino, cTetromino]
+    const theTetrominos = [lTetromino, zTetromino, tTetromino, oTetromino, iTetromino, cTetromino]
 
     let currentPosition = 4
     let currentRotation = 0
 
-    console.log(theTetrominoes[0][0])
+    console.log(theTetrominos[0][0])
 
     //randomly select a Tetromino and its first rotation
-    let random = Math.floor(Math.random()*theTetrominoes.length)
-    let current = theTetrominoes[random][currentRotation]
+    let random = Math.floor(Math.random()*theTetrominos.length)
+    let current = theTetrominos[random][currentRotation]
 
     //draw the Tetromino
     function draw() {
@@ -115,8 +115,8 @@
         current.forEach(index => squares[currentPosition + index].classList.add('taken'))
         //start a new tetromino falling
         random = nextRandom
-        nextRandom = Math.floor(Math.random() * theTetrominoes.length)
-        current = theTetrominoes[random][currentRotation]
+        nextRandom = Math.floor(Math.random() * theTetrominos.length)
+        current = theTetrominos[random][currentRotation]
         currentPosition = 4
         draw()
         displayShape()
@@ -179,7 +179,7 @@
       if(currentRotation === current.length) { //if the current rotation gets to 4, make it go back to 0
         currentRotation = 0
       }
-      current = theTetrominoes[random][currentRotation]
+      current = theTetrominos[random][currentRotation]
       checkRotatedPosition()
       draw()
     }
@@ -190,7 +190,7 @@
     const displayIndex = 0
 
     //the Tetrominos without rotations
-    const upNextTetrominoes = [
+    const upNextTetrominos = [
       [displayWidth*2+2, displayWidth+1, displayWidth*2+1, 2, 1], //cTetromino
       [1, displayWidth+1, displayWidth*2+1, 2], //lTetromino
       [0, displayWidth, displayWidth+1, displayWidth*2+1], //zTetromino
@@ -206,7 +206,7 @@
         square.classList.remove('tetromino')
         square.style.backgroundColor = ''
       })
-      upNextTetrominoes[nextRandom].forEach( index => {
+      upNextTetrominos[nextRandom].forEach( index => {
         displaySquares[displayIndex + index].classList.add('tetromino')
         displaySquares[displayIndex + index].style.backgroundColor = colors[nextRandom]
       })
@@ -220,7 +220,7 @@
       } else {
         draw()
         timerId = setInterval(moveDown, 1000)
-        nextRandom = Math.floor(Math.random()*theTetrominoes.length)
+        nextRandom = Math.floor(Math.random()*theTetrominos.length)
         displayShape()
       }
     })
