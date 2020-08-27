@@ -12,7 +12,8 @@
       'red',
       'purple',
       'green',
-      'blue'
+      'blue',
+      'black'
     ]
 
     //The Tetrominoes
@@ -24,10 +25,10 @@
     ]
 
     const cTetromino = [
-      [2, width+1, width*2+1, 2],
-      [width*2+2, width+1, width+2, width*2+2],
-      [width*2, width+1, width*2+1, width*2],
-      [width*2+2, width*2, width*2+1, width*2+2]
+      [width*2+2, width+1, width*2+1, 2, 1],
+      [0, 1, 2, width+2, width],
+      [0, 1, width+1, width*2+1, width*2],
+      [width, width*2, width*2+1, width*2+2, width+2]
     ]
 
     const zTetromino = [
@@ -56,7 +57,7 @@
       [width,width+1,width+2,width+3],
       [1,width+1,width*2+1,width*3+1],
       [width,width+1,width+2,width+3]
-    ]
+    ] 
 
     const theTetrominoes = [lTetromino, zTetromino, tTetromino, oTetromino, iTetromino, cTetromino]
 
@@ -146,7 +147,7 @@
       draw()
     }
     
-    ///FIX ROTATION OF TETROMINOS A THE EDGE 
+    ///FIX ROTATION OF TETROMINOS AT THE EDGE 
     function isAtRight() {
       return current.some(index=> (currentPosition + index + 1) % width === 0)  
     }
@@ -190,6 +191,7 @@
 
     //the Tetrominos without rotations
     const upNextTetrominoes = [
+      [displayWidth*2+2, displayWidth+1, displayWidth*2+1, 2, 1], //cTetromino
       [1, displayWidth+1, displayWidth*2+1, 2], //lTetromino
       [0, displayWidth, displayWidth+1, displayWidth*2+1], //zTetromino
       [1, displayWidth, displayWidth+1, displayWidth+2], //tTetromino
