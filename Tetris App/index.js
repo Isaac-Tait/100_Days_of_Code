@@ -13,7 +13,7 @@
       'purple',
       'green',
       'blue',
-      'black'
+      'pink'
     ]
 
     //The Tetrominos
