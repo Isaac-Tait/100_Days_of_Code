@@ -1,7 +1,11 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'sayagata-image': "url('/src/img/sayagata.png')"
+      })
+    },
   },
   variants: {},
   plugins: [],
