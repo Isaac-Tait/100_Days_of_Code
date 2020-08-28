@@ -1,5 +1,8 @@
 @tailwind base;
-
 @tailwind components;
+
+.btn {
+    @apply inline-block rounded-md bg-green-500 text-white shadow-lg tracking-wider p-2 ml-2 font-semibold text-sm;
+}
 
 @tailwind utilities;

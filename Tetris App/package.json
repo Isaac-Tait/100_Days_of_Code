@@ -10,7 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build:css": "postcss build src/styles.css -o public/styles.css"
+    "build:css": "postcss build src/styles.css -o public/styles.css",
+    "watch": "postcss build src/styles.css -o public/styles.css --watch"
   },
   "author": "Isaac M Tait",
   "license": "ISC"
