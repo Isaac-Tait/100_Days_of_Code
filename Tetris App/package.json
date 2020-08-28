@@ -4,11 +4,13 @@
   "description": "A HTML/JavaScript Tetris game",
   "main": "index.js",
   "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.7.5"
   },
   "devDependencies": {},
   "scripts": {
-    "build:css": "tailwindcss build src/styles.css -o public/styles.css"
+    "build:css": "postcss build src/styles.css -o public/styles.css"
   },
   "author": "Isaac M Tait",
   "license": "ISC"
