@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'sayagata-image': "url('/src/img/sayagata.png')"
+        'topography-image': "url('/src/img/topography.svg')"
       })
     },
   },

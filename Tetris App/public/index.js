@@ -125,6 +125,8 @@
       }
     }
 
+    && || !
+
     //move the tetromino left, unless is at the edge or there is a blockage
     function moveLeft() {
       undraw()
@@ -254,3 +256,4 @@
     }
 
   })
+  

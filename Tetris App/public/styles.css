@@ -3552,8 +3552,8 @@ video {
   background-image: linear-gradient(to top left, var(--gradient-color-stops));
 }
 
-.bg-sayagata-image {
-  background-image: url('/src/img/sayagata.png');
+.bg-topography-image {
+  background-image: url('/src/img/topography.svg');
 }
 
 .from-transparent {
@@ -25208,8 +25208,8 @@ video {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
   }
 
-  .sm\:bg-sayagata-image {
-    background-image: url('/src/img/sayagata.png');
+  .sm\:bg-topography-image {
+    background-image: url('/src/img/topography.svg');
   }
 
   .sm\:from-transparent {
@@ -46799,8 +46799,8 @@ video {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
   }
 
-  .md\:bg-sayagata-image {
-    background-image: url('/src/img/sayagata.png');
+  .md\:bg-topography-image {
+    background-image: url('/src/img/topography.svg');
   }
 
   .md\:from-transparent {
@@ -68390,8 +68390,8 @@ video {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
   }
 
-  .lg\:bg-sayagata-image {
-    background-image: url('/src/img/sayagata.png');
+  .lg\:bg-topography-image {
+    background-image: url('/src/img/topography.svg');
   }
 
   .lg\:from-transparent {
@@ -89981,8 +89981,8 @@ video {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
   }
 
-  .xl\:bg-sayagata-image {
-    background-image: url('/src/img/sayagata.png');
+  .xl\:bg-topography-image {
+    background-image: url('/src/img/topography.svg');
   }
 
   .xl\:from-transparent {
