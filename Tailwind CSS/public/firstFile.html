@@ -7,50 +7,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="styles.css" rel="stylesheet">
     </head>
-    <div class="flex">
-        <nav class="bg-red-800 w-1/2">
-            <h1 class="text-xl h-10 text-center text-indigo-700">Hello World! I am a master coder 🤪</h1>
-            <list>
-                <ul class="p-4">One (1)</ul>
-                <ul class="p-4">Two (2)</ul>
-                <ul class="p-4">Three (3)</ul>
-            </list>
-        </nav>
-        <h1 class="text-6xl w-1/2 ml-1/2 pl-8 mt-12">mountainTopCoding(&#9968;);</h1>
-    </div>
-
-    <div>
-        <img 
-            class="mx-auto h-40 w-40 rounded-full"
-            src="img/IsaacPortrait.jpg"
-            alt="Isaac Tait's Portrait"
-        >
-    </div>
-    <div class="flex">
-        <p class="w-1/3 m-5">
-            Lorem ipsum dolor sit amet, pro tibique tacimates cu, ad vide minimum concludaturque mei. Vel vivendum definiebas ad. Mel at harum labitur, ea aperiam virtute atomorum eam. Ei quot detracto vix.
-            Mazim feugait elaboraret ut ius. Usu eleifend deseruisse instructior ea. Quo debet sanctus eu, viris torquatos vix cu. Volumus vituperatoribus cum in, at quod tempor virtute nec. Erat nemore no sit, ex vel stet legere appareat, eu per doming labore equidem.
-            Id officiis laboramus comprehensam mel, sint vocent facilis cu est, quot postea vivendum eum et. At eos malis mucius intellegam. Vim ad esse erroribus. Duo sale suavitate at. Percipitur theophrastus te vim, natum errem id usu, usu in meis harum praesent. Ad sapientem voluptaria mea.
-            Ex mei primis malorum quaerendum, et aeque vocent nam. Lorem libris nusquam te nec. Cu nam numquam fabellas lobortis. Has phaedrum invenire disputationi ex.
-            Adipisci reformidans eos at. Omnis prima atqui vix ad, has ut legere scripta convenire. Cu duo suas saepe, tempor timeam sit id. Nam suas mutat ad, ut probo copiosae definitionem nec. Brute aperiri delenit an eum.
-        </p>
-        <div class="w-40 m-8 border-4">
-            <h3>Enter your kilometer splits to convert the time into mile splits...</h3>
-                <input id="minutes-time" type="text" placeholder="Minutes" />
-                <input id="seconds-time" type="text" placeholder="Seconds" />
-                    <br />
-                    <br />
-                <button 
-                    type="button" 
-                    onclick="userInput();"
-                    placeholder="Submit"
-                > Submit</button>
-            <h3>Your mile split time is <span id="result"></span></h3>
+    <div class="bg-topography-pattern">
+        <div>
+            <nav class="bg-red-800 w-full">
+                <h1 class="text-6xl ml-1/2 pl-8">mountainTopCoding(&#9968;);</h1>
+                <list>
+                    <ul class="p-4">One (1)</ul>
+                    <ul class="p-4">Two (2)</ul>
+                    <ul class="p-4">Three (3)</ul>
+                </list>
+            </nav>
         </div>
+    
+        <div>
+            <img 
+                class="mx-auto h-40 w-40 rounded-full"
+                src="img/IsaacPortrait.jpg"
+                alt="Isaac Tait's Portrait"
+            >
+        </div>
+        <div class="flex">
+            <p class="w-1/3 m-5">
+                Lorem ipsum dolor sit amet, pro tibique tacimates cu, ad vide minimum concludaturque mei. Vel vivendum definiebas ad. Mel at harum labitur, ea aperiam virtute atomorum eam. Ei quot detracto vix.
+                Mazim feugait elaboraret ut ius. Usu eleifend deseruisse instructior ea. Quo debet sanctus eu, viris torquatos vix cu. Volumus vituperatoribus cum in, at quod tempor virtute nec. Erat nemore no sit, ex vel stet legere appareat, eu per doming labore equidem.
+                Id officiis laboramus comprehensam mel, sint vocent facilis cu est, quot postea vivendum eum et. At eos malis mucius intellegam. Vim ad esse erroribus. Duo sale suavitate at. Percipitur theophrastus te vim, natum errem id usu, usu in meis harum praesent. Ad sapientem voluptaria mea.
+                Ex mei primis malorum quaerendum, et aeque vocent nam. Lorem libris nusquam te nec. Cu nam numquam fabellas lobortis. Has phaedrum invenire disputationi ex.
+                Adipisci reformidans eos at. Omnis prima atqui vix ad, has ut legere scripta convenire. Cu duo suas saepe, tempor timeam sit id. Nam suas mutat ad, ut probo copiosae definitionem nec. Brute aperiri delenit an eum.
+            </p>
+            <div class="w-40 m-8 border-4">
+                <h3>Enter your kilometer splits to convert the time into mile splits...</h3>
+                    <input id="minutes-time" type="text" placeholder="Minutes" />
+                    <input id="seconds-time" type="text" placeholder="Seconds" />
+                        <br />
+                        <br />
+                    <button 
+                        type="button" 
+                        onclick="userInput();"
+                        placeholder="Submit"
+                    > Submit</button>
+                <h3>Your mile split time is <span id="result"></span></h3>
+            </div>
+        </div>
+        <div class="bg-red-800 w-screen">
+            <h1 class="text-xl text-center p-4 m-4">Footer</h1>
+            <p class="text-right text-s pr-4">Another mountainTopCoding(&#9968;); project</p>
+        </div>
+        <script src="index.js" async defer></script>
     </div>
-    <div class="bg-red-800 w-screen">
-        <h1 class="text-xl text-center p-4 m-4">Footer</h1>
-        <p class="text-right text-s pr-4">Another mountainTopCoding(&#9968;); project</p>
-    </div>
-    <script src="index.js" async defer></script>
 </html>
