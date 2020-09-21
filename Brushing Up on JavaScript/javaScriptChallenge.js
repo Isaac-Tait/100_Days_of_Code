@@ -11,3 +11,7 @@ new Promise(function (res) {
 }).then(console.log)
 
 console.log('Fourth')
+
+// I guessed 2, 3, 1, 4
+
+// Answer is 1, 4, 3, 2
